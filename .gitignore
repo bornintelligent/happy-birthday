@@ -12,6 +12,9 @@
 # chrome package private key
 /package/*.pem
 
+#vs code
+/.vs
+
 # misc
 .DS_Store
 .env.local
