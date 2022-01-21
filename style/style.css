@@ -17,11 +17,6 @@ body {
   overflow: hidden;
 }
 
-.container div.six {
-  top: 10vh;
-  z-index: 1;
-}
-
 .container div.seven,
 .container div.eight {
   width: 100vw;
@@ -35,6 +30,12 @@ body {
   left: 0;
   right: 0;
   top: 20vh;
+}
+
+.container div.six {
+  top: 10vh;
+  z-index: 1;
+  position: relative;
 }
 
 .one {
@@ -118,23 +119,29 @@ body {
 
 .six img {
   display: inline-block;
+  /* width: auto; */
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
+  display: inline-block;
+  width: 5%;
+  top: 35%;
+  left: 33.9%;
+  /*top: -35px;
+  left: 41.5%;*/
   /* transform: scale(0.1); */
 }
 
 .six .cake{
+  display: inline-block;
   position: absolute;
-  width: 80px;
-  top: -35px;
+  width: 5%;
+  top: 68%;
   left: 41.5%;
+  opacity: 0;
   /* transform: scale(0.1); */
 }
 
@@ -241,7 +248,20 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      .six .hat{
+        top: 26%;
+        left: 33.9%;
+      }
+      .six .cake {
+        top: 50%;
+        left: 41.5%;
+      }
+     }
+/* @media screen and (max-height: 1000px) {
   .six .hat{
     left: 40%;
   }
@@ -275,7 +295,7 @@ body {
   .six .cake {
     left: 32%;
   }
-}
+}*/
 
 @media screen and (max-width: 500px) {
   .container {
@@ -299,7 +319,7 @@ body {
     font-size: 10rem;
   }
 
-  .six .hat {
+  /* .six .hat {
     width: 50px;
     top: -20px;
   }
@@ -307,7 +327,7 @@ body {
   .six .cake {
     width: 50px;
     top: -20px;
-  }
+  } */
 
   .wish-hbd {
     font-size: 2.2em;

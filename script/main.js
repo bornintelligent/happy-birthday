@@ -214,8 +214,8 @@ const animationTimeline = () => {
       {
         scale: 3.5,
         opacity: 0,
-        x: 25,
-        y: -25,
+        // x: 25,
+        // y: -25,
         rotationZ: -45
       },
       "-=2"
@@ -225,8 +225,8 @@ const animationTimeline = () => {
       opacity: 0
     },
     {
-      x: -104,
-      y: 308,
+      // x: -400,
+      // y: 62,
       rotation: 360,
       opacity: 1,
       scale: 0.5
@@ -236,8 +236,8 @@ const animationTimeline = () => {
       opacity: 0
     },
     {
-      x: -10,
-      y: 590,
+      // x: 0,
+      // y: 300,
       rotation: 0,
       opacity: 1,
       scale: 0.7
